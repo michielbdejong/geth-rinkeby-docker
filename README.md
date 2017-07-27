@@ -4,7 +4,8 @@ Dockerfile that runs geth ('go-ethereum') as a light node against the current ("
 ```sh
 docker build --tag michielbdejong/geth-rinkeby .
 export PWD=`pwd`
-export CONTAINER=`docker run -d --net=host -v $PWD/blocks:/root/.rinkeby michielbdejong/geth-rinkeby`
+docker run -v $PWD:/host michielbdejong/geth-rinkeby cp -r .rinkeby /host/rinkeby
+CONTAINER=`docker run -d --net=host -v $PWD/rinkeby:/root/.rinkeby michielbdejong/geth-rinkeby`
 docker logs -f $CONTAINER
 ```
 
