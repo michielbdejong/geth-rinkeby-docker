@@ -16,8 +16,7 @@ docker logs -f $CONTAINER
 > ...
 ```
 
-This will expose ports 8545 and 30303 publically on your server, so in production you probably want to omit the `--net=host`.
-It does however allow you to easily attach to geth, as we'll see blow.
+This allows you to easily attach to geth from your host machine, as we'll see below.
 Once the 'number' is in those logs is equal to the current 'Best Block' on https://www.rinkeby.io/, your node is in sync with the Rinkeby network. You can then generate your wallet:
 
 ```sh
