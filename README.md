@@ -42,5 +42,8 @@ docker run -it --net=host michielbdejong/geth-rinkeby geth attach http://localho
 > personal.unlockAccount("0x596144741ac842bf4c5f976d01e5ca0e8b552963", "xidaequeequuu4xah8Ohnoo1Aesumiech6tiay1h")
 true
 > [now paste the Web3 deploy code from the online solidity compiler]
-true
+null [object Object]
+undefined
+> [wait 5 minutes]
+Contract mined! address: 0x8b3fbd781096b51e68448c6e5b53b240f663199f transactionHash: 0x9ff7e7441898dde584b13c11768d78943b117b64ca8b906025459e45828d1b8f
 ```
