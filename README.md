@@ -41,6 +41,8 @@ docker run -it --net=host michielbdejong/geth-rinkeby geth attach http://localho
 3
 > personal.unlockAccount("0x596144741ac842bf4c5f976d01e5ca0e8b552963", "xidaequeequuu4xah8Ohnoo1Aesumiech6tiay1h")
 true
+> eth.sendTransaction({ from: "0x596144741ac842bf4c5f976d01e5ca0e8b552963", to: "0x45a0c640b129e50c3da474cad9936dfd7d77868f", value: web3.toWei(0.01, "ether") })
+"0xd70a8cdbbe15afa7603679036a818bebf04963ff2fb033aed6c7025dd24438b3"
 > [now paste the Web3 deploy code from the online solidity compiler]
 null [object Object]
 undefined
