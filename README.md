@@ -7,7 +7,7 @@ You can also edit the CMD line in the Dockerfile, or specify a customized comman
 docker build --tag michielbdejong/geth-rinkeby .
 export PWD=`pwd`
 # copy empty Rinkeby database to host for easy reuse:
-docker run -v $PWD:/host michielbdejong/geth-rinkeby cp -r .rinkeby /host/rinkeby
+docker run -v $PWD:/host michielbdejong/geth-rinkeby cp -r /root/.rinkeby /host/rinkeby
 # start syncing:
 CONTAINER=`docker run -d --net=host -v $PWD/rinkeby:/root/.rinkeby michielbdejong/geth-rinkeby`
 docker logs -f $CONTAINER
